@@ -14,4 +14,9 @@ class Reminder extends Model
     {
         return $this->belongsTo(ReminderType::class, 'ReminderType', 'id');
     }
+
+    public function type2()
+    {
+        
+    }
 }
