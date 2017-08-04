@@ -1,4 +1,4 @@
-<h1>Your Reminder(s)</h1>
+<h1>YOUR REMINDER(S)</h1>
 @foreach($reminders as $reminder)
     <div class="well">
         <span>{{ $reminder->body }} <b>({{ $reminder->getType->type }})</b></span>
@@ -10,4 +10,4 @@
             <input type="submit" class="btn btn-success pull-right" value="FINISH">
         </form>
     </div>
-@endforeach   
+@endforeach
