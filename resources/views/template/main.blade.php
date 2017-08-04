@@ -29,7 +29,7 @@
         </div>
     </div>
     </nav>
-
+    
     @yield('content')
 
     <footer class="container-fluid text-center">
