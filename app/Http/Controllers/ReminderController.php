@@ -37,4 +37,12 @@ class ReminderController extends Controller
         
         return back();
     }
+
+    public function showFinishedReminder()
+    {
+        $data['title']      = 'Finished Reminder List';
+        $data['reminders']  = Reminder::onlyTrashed()->get();
+
+        return view('finished', $data);
+    }
 }
