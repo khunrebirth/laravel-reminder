@@ -1,4 +1,5 @@
 <h1>YOUR REMINDER(S)</h1>
+<a href="/finished">SHOW FINISHED REMINDER</a>
 @foreach($reminders as $reminder)
     <div class="well">
         <span>{{ $reminder->body }} <b>({{ $reminder->getType->type }})</b></span>
