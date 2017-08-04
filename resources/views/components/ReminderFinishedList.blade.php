@@ -2,8 +2,8 @@
     <thead>
         <tr>
             <td>#</td>
-            <td>Body</td>
-            <td>Time</td>
+            <td>Reminder Name</td>
+            <td>Finished At</td>
         </tr>
     </thead>
     <tbody>
