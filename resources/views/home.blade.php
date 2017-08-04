@@ -6,7 +6,6 @@
 
 {{-- Content --}}
 @section('content')
-    @include('components.NavBar')
     <div class="container" style="margin: 80px; 0px;">
         <div class="row">
             <div class="col-md-12">
@@ -30,5 +29,4 @@
             </div>
         </div>
     </div>
-    @include('components.Footer')
 @stop
