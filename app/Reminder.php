@@ -10,13 +10,8 @@ class Reminder extends Model
     public      $primaryKey     = 'id';
     public      $timestamps     = true;
 
-    public function type()
+    public function getType()
     {
         return $this->belongsTo(ReminderType::class, 'ReminderType', 'id');
-    }
-
-    public function type2()
-    {
-        
     }
 }
