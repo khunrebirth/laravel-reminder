@@ -9,6 +9,14 @@
             required
         ></textarea>
     </div>
+    <div class="form-group">
+        <label>Type:</label>
+        <select name="type" class="form-control">
+            @foreach($types as $type)
+                <option value="{{ $type->id }}">{{ $type->type }}</option>
+            @endforeach
+        </select>
+    </div>
     {{ csrf_field() }}
     <input type="submit" class="btn btn-primary" value="CREATE NEW REMINDER">
 </form>
