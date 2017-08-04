@@ -18,6 +18,8 @@
  *****************************/
 
 Route::get('/', 'ReminderController@home');
+Route::get('/finished', 'ReminderController@showFinishedReminder');
+
 Route::post('/reminder/new', 'ReminderController@addReminder');
 Route::delete('/reminder/delete', 'ReminderController@deleteReminder');
 
