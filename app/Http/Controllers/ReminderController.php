@@ -11,8 +11,10 @@ class ReminderController extends Controller
 {
     public function home()
     {
+        $data['title']      = 'Home Page';
         $data['reminders']  = Reminder::orderBy('id', 'desc')->get();
         $data['types']      = ReminderType::get();
+
         return view('home', $data);
     }
 
@@ -32,16 +34,7 @@ class ReminderController extends Controller
     public function deleteReminder(Request $request)
     {
         Reminder::find($request->reminderID)->delete();
-        return back()->with('status', 'Good Job!, You finished 1 task');
+        
+        return back();
     }
-
-    // public function editReminder(Request $request)
-    // {
-    //     $reminder               = Reminder::find($request->reminderID);
-    //     $reminder->body         = $request->reminder;
-    //     $reminder->isFinished   = false;
-    //     $reminder->createUserID = 1;
-    //     $reminder->save();
-    //     return back()->with('status', '');
-    // }
 }
