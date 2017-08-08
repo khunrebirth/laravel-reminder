@@ -31,3 +31,4 @@ Route::post('/remindertype/new', 'ReminderTypeController@addReminderType');
 // Route::get('/remindertype', 'ReminderTypeController@listReminder');
 
 Route::get('file', 'FileController@home');
+Route::post('file/upload', 'FileController@upload');
