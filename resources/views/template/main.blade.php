@@ -21,7 +21,7 @@
         <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav navbar-right">
             <li class=""><a href="/">HOME</a></li>
-            <li><a href="/upload">UPLOAD</a></li>
+            <li><a href="/file">FILES</a></li>
         </ul>
         </div>
     </div>
