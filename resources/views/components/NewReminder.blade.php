@@ -1,5 +1,5 @@
 <form method="post" action="/reminder/new">
-    <h1>NEW REMINDER</h1>
+    <h3>NEW REMINDER</h3>
     <div class="form-group">
         <label>Reminder:</label>
         <textarea 

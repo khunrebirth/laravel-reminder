@@ -1,4 +1,4 @@
-<h1>YOUR REMINDER(S)</h1>
+<h3>YOUR REMINDER(S)</h3>
 <a href="/finished">SHOW FINISHED REMINDER</a>
 @foreach($reminders as $reminder)
     <div class="well">

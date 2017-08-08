@@ -2,7 +2,7 @@
     <div class="alert alert-success" role="alert">{{ session('ReminderTypeStatus') }}</div>
 @endif
 <form method="post" action="/remindertype/new">
-    <h1>NEW REMINDER TYPE</h1>
+    <h3>NEW REMINDER TYPE</h3>
     <div class="form-group">
         <label>Reminder type: </label>
         <input type="text" name="name" class="form-control" placeholder="Reminder Type Name" required>
