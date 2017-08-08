@@ -18,6 +18,7 @@
  *****************************/
 
 Route::get('/', 'ReminderController@home');
+
 Route::get('/finished', 'ReminderController@showFinishedReminder');
 
 Route::post('/reminder/new', 'ReminderController@addReminder');
@@ -25,6 +26,8 @@ Route::delete('/reminder/delete', 'ReminderController@deleteReminder');
 
 Route::post('/remindertype/new', 'ReminderTypeController@addReminderType');
 
-Route::get('/profile', 'ProfileController@profile');
+// Route::get('/profile', 'ProfileController@profile');
 
-Route::get('/remindertype', 'ReminderTypeController@listReminder');
+// Route::get('/remindertype', 'ReminderTypeController@listReminder');
+
+Route::get('file', 'FileController@home');
