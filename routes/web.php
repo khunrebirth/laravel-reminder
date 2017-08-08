@@ -32,3 +32,4 @@ Route::post('/remindertype/new', 'ReminderTypeController@addReminderType');
 
 Route::get('file', 'FileController@home');
 Route::post('file/upload', 'FileController@upload');
+Route::get('file/{fileName}', 'FileController@download');
