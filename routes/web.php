@@ -26,3 +26,5 @@ Route::delete('/reminder/delete', 'ReminderController@deleteReminder');
 Route::post('/remindertype/new', 'ReminderTypeController@addReminderType');
 
 Route::get('/profile', 'ProfileController@profile');
+
+Route::get('/remindertype', 'ReminderTypeController@listReminder');
