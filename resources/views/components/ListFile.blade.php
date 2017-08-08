@@ -12,8 +12,8 @@
             @foreach($files as $file)
                 <tr>
                     <th>{{ $loop->iteration }}</th>
-                    <td>{{ $file->FileName }}</td>
-                    <td><a href="" class="btn btn-danger">Download</a></td>
+                    <td>{{ $file->FileName . '.' . $file->FileExtension }}</td>
+                    <td><a href="/file/{{ $file->FileName }}.{{ $file->FileExtension }}" class="btn btn-danger">Download</a></td>
                 </tr>
             @endforeach
         </tbody>
