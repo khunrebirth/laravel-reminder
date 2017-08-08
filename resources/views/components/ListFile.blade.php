@@ -1,18 +1,23 @@
-<table class="table table-striped table-hover">
-    <thead>
-        <tr>
-            <td>#</td>
-            <td>File Name</td>
-            <td>Download</td>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach($files as $file)
+<h3>Files</h3>
+@if(count($files) != 0)
+    <table class="table table-striped table-hover">
+        <thead>
             <tr>
-                <th>{{ $loop->iteration }}</th>
-                <td>{{ $file->FileName }}</td>
-                <td><a href="" class="btn btn-primary">Download</a></td>
+                <td>#</td>
+                <td>File Name</td>
+                <td>Download</td>
             </tr>
-        @endforeach
-    </tbody>
-</table>
+        </thead>
+        <tbody>
+            @foreach($files as $file)
+                <tr>
+                    <th>{{ $loop->iteration }}</th>
+                    <td>{{ $file->FileName }}</td>
+                    <td><a href="" class="btn btn-primary">Download</a></td>
+                </tr>
+            @endforeach
+        </tbody>
+    </table>
+@else
+    <strong>There's no file right now</strong>
+@endif
