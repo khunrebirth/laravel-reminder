@@ -1,3 +1,6 @@
+@if(session('ReminderTypeStatus'))
+    <div class="alert alert-success" role="alert">{{ session('ReminderTypeStatus') }}</div>
+@endif
 <form method="post" action="/remindertype/new">
     <h1>NEW REMINDER TYPE</h1>
     <div class="form-group">
