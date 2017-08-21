@@ -14,7 +14,7 @@
 
 #### 3. สร้าง ไฟล์ database.sqlite ใน `database/database.sqlite`
 
-#### 4. สร้าง database โดย migration ใช้คำสั่ง
+#### 4. สร้าง Tables โดย migration ใช้คำสั่ง
 ```php artisan migrate```
 
 #### 5. สั่งรัน server ใช้คำสั่ง
