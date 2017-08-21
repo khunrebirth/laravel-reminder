@@ -1,9 +1,5 @@
-<p align="center">
-<img src=""></a>
-</p>
-
 # Laravel 5.4 Reminder
-> Wih SQLite
+> With SQLite
 
 ### การติดตั้ง
 
